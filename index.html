@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faith Flavours | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Faith Flavours</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+             <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+        </nav>
+    </header>
+
+    <section id="hero">
+<div class="hero-content">
+    <h1>Bringing Flavours to Your Table</h1>
+    <p> Faith Flavours is dedicated to creating unforgettable food experiences that bring people together. Every dish tells a story of passion, culture, and taste, carefully crafted to delight the senses and leave a lasting impression. From traditional favorites to innovative creations, each meal is made with love, quality ingredients, and a deep respect for flavor and presentation. </p>
+    <a href="about.html" class="btn">Read More</a>
+</div>
+    </section>
+
+<section id="gallery">
+  <h2>Recipe Gallery</h2>
+  <div class="gallery-container">
+
+    <div class="gallery-item">
+      <img src="images/delicacy1.jpg" alt="Spaghetti Recipe">
+      <p class="caption">Classic Spaghetti Pasta in a Flavorful Sauce</p>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/delicay2.jpg" alt="Eba and Soup">
+      <p class="caption">Authentic Eba with Rich Traditional Soup</p>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/delicacy3.jpg" alt="Jollof Rice and Chicken">
+      <p class="caption">Savory Jollof Rice Served with Grilled Chicken</p>
+    </div>
+
+  </div>
+</section>
+
+
+    <footer>
+        <p>&copy; 2025 Faith Flavours. All rights reserved</p>
+        <div class="socials">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        })
+    </script>
+</body>
+</html>
