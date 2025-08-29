@@ -21,12 +21,17 @@
   background-color: var(--bg-color);
  }
 
+.logo {
+  color: var(--light-color);
+}
+
  header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 4rem;
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color); */
+   background: var(--primary-color);
   border-bottom: 1px solid #eee;
   position: sticky;
   top: 0;
@@ -36,7 +41,8 @@
  .logo {
   font-size: clamp(1.5rem, 2vw, 2rem);
   font-weight: bold;
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
+  color: var(--light-gray);
  }
 
  nav ul {
@@ -47,7 +53,7 @@
 
  nav ul li a  {
   text-decoration: none;
-  color: var(--text-color);
+color: var(--light-gray);
   font-weight: 500;
   position: relative;
   transition: var(--transition);
@@ -60,7 +66,7 @@
   bottom: -5px;
   width: 0%;
   height: 2px;
-  background: var(--primary-color);
+  background: var(--light-color);
   transition: width 0.3s ease-in-out;
  }
 
@@ -105,7 +111,9 @@
   nav ul.nav-links li {
     margin-bottom: 1rem;
   }
-
+.nav-links a {
+  color: #333;
+}
   .hamburger {
     display: flex;
   }
