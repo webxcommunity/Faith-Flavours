@@ -10,16 +10,22 @@
 </head>
 <body>
   <header>
-    <div class="logo">Faith Flavours</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+        <div class="logo">Faith Flavours</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+             <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+        </nav>
+    </header>
 
 
   <section class="confirmation">
@@ -32,5 +38,15 @@
     <p>&copy; 2025 Faith Flavours. All rights reserved</p>
 </footer>
 
+
+
+ <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        })
+    </script>
   </body>
   </html>
